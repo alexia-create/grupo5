@@ -10,9 +10,14 @@ const conversao_em_grama = {
 
 function converterMassa(valor, deUnidade, paraUnidade) {
 
+    if (valor < 0) {
+        throw new Error("A massa não pode ser um valor negativo.");
+    }
+
+    if (!conversao_em_grama[deUnidade] || !conversao_em_grama[paraUnidade]) {
+        throw new Error("Unidade de medida não suportada.");
+    }
+
     const valorEmGramas = valor * conversao_em_grama[deUnidade];
-
-    const valorConvertido = valorEmGramas / conversao_em_grama[paraUnidade];
-
-    return valorConvertido;
+    return valorEmGramas / conversao_em_grama[paraUnidade];
 }
