@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Massa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Conversor de Unidades de Massa</h1>
+    <p>Converta valores entre diferentes unidades de massa.</p>
+
+    <label>Valor:</label><br>
+    <input type="number" id="valor"><br><br>
+
+    <label>Converter de:</label><br>
+
+    <select id="origem">
+        <option value="g">Grama (g)</option>
+        <option value="kg">Quilograma (kg)</option>
+        <option value="mg">Miligrama (mg)</option>
+        <option value="lb">Libra (lb)</option>
+        <option value="oz">Onça (oz)</option>
+    </select>
+
+    <br><br>
+
+    <label>Para:</label><br>
+
+    <select id="destino">
+        <option value="g">Grama (g)</option>
+        <option value="kg">Quilograma (kg)</option>
+        <option value="mg">Miligrama (mg)</option>
+        <option value="lb">Libra (lb)</option>
+        <option value="oz">Onça (oz)</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="converter()">Converter</button>
+
+    <h2 id="resultado"></h2>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
