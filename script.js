@@ -15,7 +15,7 @@ function converter() {
         const resultado = converterMassa(valor, origem, destino);
 
         document.getElementById("resultado").innerHTML =
-            `${valor} ${origem} = ${resultado.toFixed(4)} ${destino}`;
+            `Resultado: ${valor} ${origem} = ${resultado.toFixed(4)} ${destino}`;
 
     } catch (erro) {
 
