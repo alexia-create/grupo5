@@ -1,7 +1,11 @@
 function converter() {
 
     const valor = Number(document.getElementById("valor").value);
-
+    
+    if (isNaN(valor)) {
+    document.getElementById("resultado").innerHTML = "Digite um valor válido.";
+    return;
+}
     const origem = document.getElementById("origem").value;
 
     const destino = document.getElementById("destino").value;
