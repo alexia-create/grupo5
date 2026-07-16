@@ -3,49 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Massa</title>
+
+    <title>Conversor de Unidades de Massa</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <main class="pagina">
+        <section class="conversor-card">
+            <header class="cabecalho">
+                <span class="icone-massa" aria-hidden="true">⚖️</span>
 
-    <h1>Conversor de Unidades de Massa</h1>
-    <p>Converta valores entre diferentes unidades de massa.</p>
+                <div>
+                    <h1>Conversor de Unidades de Massa</h1>
 
-    <label>Valor:</label><br>
-    <input type="number" id="valor"><br><br>
+                    <p>
+                        Converta valores entre diferentes unidades de massa
+                        de maneira rápida e simples! 
+                    </p>
+                </div>
+            </header>
 
-    <label>Converter de:</label><br>
+            <div class="formulario-conversao">
+                <div class="campo">
+                    <label for="valor">Valor</label>
 
-    <select id="origem">
-        <option value="g">Grama (g)</option>
-        <option value="kg">Quilograma (kg)</option>
-        <option value="mg">Miligrama (mg)</option>
-        <option value="lb">Libra (lb)</option>
-        <option value="oz">Onça (oz)</option>
-    </select>
+                    <input
+                        type="number"
+                        id="valor"
+                        placeholder="Digite o valor"
+                        step="any"
+                    >
+                </div>
 
-    <br><br>
+                <div class="grupo-unidades">
+                    <div class="campo">
+                        <label for="origem">Converter de</label>
 
-    <label>Para:</label><br>
+                        <select id="origem">
+                            <option value="g">Grama (g)</option>
+                            <option value="kg">Quilograma (kg)</option>
+                            <option value="mg">Miligrama (mg)</option>
+                            <option value="lb">Libra (lb)</option>
+                            <option value="oz">Onça (oz)</option>
+                        </select>
+                    </div>
 
-    <select id="destino">
-        <option value="g">Grama (g)</option>
-        <option value="kg">Quilograma (kg)</option>
-        <option value="mg">Miligrama (mg)</option>
-        <option value="lb">Libra (lb)</option>
-        <option value="oz">Onça (oz)</option>
-    </select>
+                    <div class="simbolo-conversao" aria-hidden="true">
+                        →
+                    </div>
 
-    <br><br>
+                    <div class="campo">
+                        <label for="destino">Converter para</label>
 
-    <button onclick="converter()">Converter</button>
+                        <select id="destino">
+                            <option value="g">Grama (g)</option>
+                            <option value="kg">Quilograma (kg)</option>
+                            <option value="mg">Miligrama (mg)</option>
+                            <option value="lb">Libra (lb)</option>
+                            <option value="oz">Onça (oz)</option>
+                        </select>
+                    </div>
+                </div>
 
-    <h2 id="resultado"></h2>
+                <button type="button" onclick="converter()">
+                    Converter
+                </button>
+            </div>
+
+            <div class="area-resultado" aria-live="polite">
+                <h2 id="resultado">
+                    O resultado aparecerá aqui:
+                </h2>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <p>Projeto Desenvolvido Pelo Grupo 5</p>
+        </footer>
+    </main>
 
     <script src="index.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
