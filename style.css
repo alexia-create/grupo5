@@ -158,3 +158,59 @@ button:focus-visible {
     outline: 3px solid rgba(47, 101, 135, 0.25);
     outline-offset: 2px;
 }
+
+@media (max-width: 650px) {
+    .pagina {
+        padding: 20px 12px;
+    }
+
+    .conversor-card {
+        padding: 24px 18px;
+    }
+
+    .cabecalho {
+        margin-bottom: 24px;
+    }
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .cabecalho p {
+        font-size: 15px;
+    }
+
+    .grupo-unidades {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .simbolo-conversao {
+        padding: 0;
+        font-size: 20px;
+        transform: rotate(90deg);
+    }
+
+    button {
+        height: 48px;
+    }
+
+    #resultado {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .rodape {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .conversor-card {
+        padding: 20px 14px;
+    }
+
+    .cabecalho h1 {
+        font-size: 22px;
+    }
+}
