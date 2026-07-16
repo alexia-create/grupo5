@@ -125,3 +125,36 @@ button:hover {
     font-size: 14px;
     text-align: center;
 }
+
+input:hover,
+select:hover {
+    border-color: #7b929f;
+}
+
+input:focus,
+select:focus {
+    border-color: #2f6587;
+    outline: 2px solid rgba(47, 101, 135, 0.15);
+}
+
+input::placeholder {
+    color: #87959c;
+}
+
+button {
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    background-color: #214b64;
+    box-shadow: none;
+}
+
+button:focus-visible {
+    outline: 3px solid rgba(47, 101, 135, 0.25);
+    outline-offset: 2px;
+}
