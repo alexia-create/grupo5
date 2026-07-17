@@ -62,3 +62,7 @@ A principal diferença entre as versões 1.0.0 e 2.0.0 é a reformulação esté
 ## Execução
 
 Para utilizar o projeto, basta baixar os arquivos e abrir o arquivo `index.html` em um navegador.
+
+## Status da entrega
+
+A versão 2.0.0 é a versão final do projeto, com melhorias visuais e adaptação para telas menores.
